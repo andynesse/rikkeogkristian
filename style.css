@@ -1,0 +1,142 @@
+@media only screen and (max-width: 1024px) {
+    .title{
+        background-image: url("img/Foto-BE-52-71_websize.jpg") !important;
+    }
+}
+:root{
+    --bgcolor: #ffffff;
+    --textcolormain: #000000;
+    --textcolorinverse: #ffffff;
+
+}
+
+html{
+    overflow-x: hidden;
+    max-width: 100vw;
+    background-color: rgb(249, 249, 241);
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+    color: black;
+    width: 100vw;
+    max-width: 100%;
+    white-space: nowrap;
+    
+
+}
+.title{
+    margin-top: -84px;
+    padding-bottom: 10vh;
+    width: 100vw;
+    height: 90vh;
+    background-image: url("img/Foto-BE-52-76_websize.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.title-opacity-layer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100.1%;
+    background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0),rgba(255,255,255,1), rgba(255,255,255,1));
+}
+
+.title-header {
+    position: absolute;
+    top: 28%;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    color: var(--textcolorinverse);
+    background-color: rgba(0,0,0,0);
+    border-radius: 3vw;
+    z-index: 2px;
+}
+
+.title-h1{
+    font-family: sans-serif;
+    font-size: 6vw;
+    text-align: center;
+    margin-bottom: 0;
+    visibility: hidden;
+}
+.title-info{
+    font-family: 'EB Garamond';
+    text-align: left;
+    font-size:32px;
+}
+i{
+    font-size: 26px;
+}
+.ex-section{
+    margin-top: 20px;
+}
+.ex-article{
+    margin: 0 15%;
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: auto auto auto;
+    gap: 0 50px;
+
+}
+.ex-h3{
+    grid-row:1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+}
+.ex-content1{
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+.ex-img{
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+}
+.ex-content2{
+    grid-column: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+footer{
+    height: 180px;
+    color: rgb(112, 83, 77);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-content{
+    margin: 0 5% 0 5%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    justify-content: space-between;
+}
+.footer-title{
+    width: 150px;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.contact > p > a{
+    color: rgb(112, 83, 77);
+}
+.contact > h5{
+    font-size: 14px;
+}
+footer > p{
+    text-align: center;
+    font-size: 14px;
+}
