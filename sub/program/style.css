@@ -39,7 +39,7 @@ body{
     white-space: normal;
 }
 .title{
-    margin-top: -84px;
+    margin-top: 0;
     padding-bottom: 10vh;
     height: 45vh;
     background-image: url("../../img/rogk/806A6032.jpg");

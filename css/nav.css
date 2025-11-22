@@ -10,7 +10,7 @@
 }
 
 header{
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: transparent;
     display: flex;
@@ -20,7 +20,6 @@ header{
     border-bottom: 3px rgba(255, 192, 203, 0) solid;
     height: 80px;
     z-index: 6;
-    width: 100vw;
     transition: 300ms all;
     color: #ffffff;
 }

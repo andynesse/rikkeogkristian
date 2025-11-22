@@ -29,7 +29,7 @@ body{
 
 /* --- Header og Tittel Seksjon --- */
 .title{
-    margin-top: -84px;
+    margin-top: 0;
     padding-bottom: 0; /* Endret fra 10vh for å minske gap */
     height: 45vh;
     background-image: url("../../img/rogk/806A5745.jpg");
