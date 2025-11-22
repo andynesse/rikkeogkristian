@@ -32,47 +32,54 @@ html{
     background-color: var(--bgcolor);
 }
 body{
-    font-family: serif;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     color: black;
     max-width: 100%;
     white-space: normal;
 }
+
+/* --- Header og Tittel Seksjon --- */
 .title{
     margin-top: 0;
-    padding-bottom: 10vh;
+    padding-bottom: 0; /* Endret fra 10vh for å minske gap */
     height: 45vh;
-    background-image: url("../../img/rogk/806A6032.jpg");
+    background-image: url("../../img/rogk/806A5745.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-
+    position: relative;
 }
 .title-opacity-layer{
-    margin: 0;
-    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100.1%;
-    background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0),rgba(255,255,255,1), rgba(255,255,255,1));
+    height: 100%;
+    background-image: linear-gradient(rgba(255,255,255,0) 50%, rgba(249,249,241,1) 100%);
 }
 
 .title-header {
     position: absolute;
-    top: 18%;
+    top: 30%;
     left: 10%;
     right: 10%;
     width: 80%;
     color: var(--textcolorinverse);
-    background-color: rgba(0,0,0,0);
-    border-radius: 3vw;
-    z-index: 2px;
+    z-index: 2;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 }
-
 .title-h1{
     text-align: left;
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 0;
     font-weight: 100;
-    font-family: serif;
+    font-family: 'EB Garamond', serif;
+}
+
+
+.title, .title-h1, h1{
+    font-family: 'EB Garamond', serif;
 }
 
 .program{
@@ -142,4 +149,7 @@ footer{
 footer > p{
     text-align: center;
     font-size: 14px;
+}
+.title, .title-h1, h1{
+    font-family: 'EB Garamond', serif;
 }
