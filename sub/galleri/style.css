@@ -1,3 +1,6 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 :root{
     --bgcolor: rgb(249, 249, 241);
     --textcolormain: #000000;
@@ -5,25 +8,29 @@
     --primary-brown: rgb(112, 83, 77);
 }
 
+html, body, header, .title {
+    width: 100%;
+    max-width: 100%;
+}
+html, body {
+    overflow-x: hidden;
+}
 html{
     overflow-x: hidden;
-    max-width: 100vw;
     background-color: var(--bgcolor);
 }
 body{
     font-family: serif;
     margin: 0;
     color: black;
-    width: 100vw;
     max-width: 100%;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 /* --- Header og Tittel Seksjon --- */
 .title{
     margin-top: -84px;
     padding-bottom: 0; /* Endret fra 10vh for å minske gap */
-    width: 100vw;
     height: 45vh;
     background-image: url("../../img/rogk/806A5745.jpg");
     background-size: cover;
