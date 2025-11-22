@@ -1,0 +1,313 @@
+:root{
+    --bgcolor: rgb(249, 249, 241);
+    --textcolormain: #000000;
+    --textcolorinverse: #ffffff;
+    --primary-brown: rgb(112, 83, 77);
+}
+
+html{
+    overflow-x: hidden;
+    max-width: 100vw;
+    background-color: var(--bgcolor);
+}
+body{
+    font-family: serif;
+    margin: 0;
+    color: black;
+    width: 100vw;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+/* --- Header og Tittel Seksjon --- */
+.title{
+    margin-top: -84px;
+    padding-bottom: 0; /* Endret fra 10vh for å minske gap */
+    width: 100vw;
+    height: 45vh;
+    background-image: url("../../img/rogk/806A5745.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.title-opacity-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255,255,255,0) 50%, rgba(249,249,241,1) 100%);
+}
+
+.title-header {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    color: var(--textcolorinverse);
+    z-index: 2;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+.title-h1{
+    text-align: left;
+    font-size: 60px;
+    margin-bottom: 0;
+    font-weight: 100;
+    font-family: 'EB Garamond', serif;
+}
+
+/* --- Credits Seksjon --- */
+.credits{
+    padding: 20px 5% 0 5%;
+    border-top: 1px solid #ddd;
+    font-size: 16px;
+    color: var(--textcolormain);
+    border: none;
+}
+.credits .container{
+    max-width: 100%;
+    margin: auto;
+    
+}
+.credits p{
+    margin: 10px 0 10px 0;
+    text-wrap: wrap;
+}
+.credits a{
+    color: var(--primary-brown);
+    text-decoration: none;
+    text-wrap: wrap;
+}
+
+/* --- GALLERI STYLING (Nytt) --- */
+
+.content {
+    padding: 35px 5%; /* Gir luft på sidene */
+    min-height: 50vh;
+}
+
+/* Grid Layout for thumbnails */
+.gallery-grid {
+    display: grid;
+    /* Denne linjen gjør det responsivt automatisk: */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px;
+    width: 100%;
+}
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Fast høyde for uniformitet */
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sørger for at bildene dekker ruten uten å bli strukket */
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.1); /* Zoom effekt inni ruten */
+}
+
+/* --- LIGHTBOX / MODAL STYLING (Nytt) --- */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+/* Modal Content Wrapper */
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Selve bildet i modalen */
+.modal-main-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+/* Lukk-knapp */
+.close {
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 60px;
+    font-weight: 100;
+    transition: 0.3s;
+    z-index: 1001;
+    line-height: 0.6;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Neste/Forrige knapper */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Bilde teller (1/4 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: sans-serif;
+}
+
+
+/* --- Footer Styles --- */
+footer{
+    height: 180px;
+    color: var(--primary-brown);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--bgcolor);
+}
+.footer-content{
+    margin: 0 5% 0 5%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    justify-content: space-between;
+}
+.footer-title{
+    width: 150px;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact > p > a{
+    color: var(--primary-brown);
+    text-decoration: none;
+}
+.contact > h5{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+footer > p{
+    text-align: center;
+    font-size: 14px;
+}
+
+/* --- Media Queries (Mobil) --- */
+@media only screen and (max-width: 1024px) {
+    .title{
+        background-image: url("../../img/rogk/806A5745.jpg") !important;
+        height: 35vh;
+    }
+    .title-header {
+        top: 25%;
+    }
+    .title-h1{
+        text-align: center !important;
+        font-size: 40px;
+    }
+    
+    /* Justerer grid på mobil til å vise færre kolonner */
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 10px;
+    }
+    
+    .prev, .next {
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    
+    /* Justerer grid på mobil til å vise færre kolonner */
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        gap: 10px;
+    }
+}

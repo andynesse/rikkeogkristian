@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rikke & Kristian - Galleri</title>
+        <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/620/620812.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../../css/nav.css">
+        <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src="../../js/dropdownnav.js"></script>
+        <script src="../../js/changeColorNav.js"></script>
+    </head>
+    <body>
+        <header>
+            <a class="header-a" href="/">
+                <img class="header-img-black" src="../../img/else og olav svart new.png" alt="Kristian & Rikke">
+                <img class="header-img-white" src="../../img/else og olav hvit new.png" alt="Kristian & Rikke">
+            </a>
+            <nav class="dtnav">
+                <a href="../../sub/program/" class="dtnav_link">Program</a>
+                <a href="../../sub/info/" class="dtnav_link">Info</a>
+                <a href="../../sub/galleri/" class="dtnav_link">Galleri</a>
+                <a href="../../sub/paamelding/" class="dtnav_link">Påmelding</a>
+            </nav>
+            <nav class="ddnav">
+                <button type="button" class="ddnav_close">&times;</button>
+                <a href="../../sub/program/" class="ddnav_link">Program</a>
+                <a href="../../sub/info/" class="ddnav_link">Info</a>
+                <a href="../../sub/galleri/" class="ddnav_link">Galleri</a>
+                <a href="../../sub/paamelding/" class="ddnav_link">Påmelding</a>
+            </nav>
+            <button id="ddnav_openbtn" onclick="openNav()">&equiv;</button>
+        </header>
+
+        <main>
+            <section class="title">
+                <div class="title-opacity-layer"></div>
+                <div class="title-header">
+                    <h1 class="title-h1">Galleri</h1>
+                </div>
+            </section>
+            <section class="credits">
+                <div class="container">
+                    <p>
+                        Bildene er tatt av Rikkes dyktige søster og fotograf, Birte Harveland.
+                    </p>
+                    <a href="https://www.instagram.com/birte.foto/">https://www.instagram.com/birte.foto/</a>
+                </div>
+            </section>
+            <section class="content">
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openModal();currentSlide(1)">
+                        <img class="gallery-img" src="../../img/rogk/806A5103.jpg" alt="Galleri bilde 1">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(2)">
+                        <img class="gallery-img" src="../../img/rogk/806A5168.jpg" alt="Galleri bilde 2">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(3)">
+                        <img class="gallery-img" src="../../img/rogk/806A5266.jpg" alt="Galleri bilde 3">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(4)">
+                        <img class="gallery-img" src="../../img/rogk/806A5298.jpg" alt="Galleri bilde 4">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(5)">
+                        <img class="gallery-img" src="../../img/rogk/806A5390.jpg" alt="Galleri bilde 5">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(6)">
+                        <img class="gallery-img" src="../../img/rogk/806A5417.jpg" alt="Galleri bilde 6">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(7)">
+                        <img class="gallery-img" src="../../img/rogk/806A5441.jpg" alt="Galleri bilde 7">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(8)">
+                        <img class="gallery-img" src="../../img/rogk/806A5712.jpg" alt="Galleri bilde 8">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(9)">
+                        <img class="gallery-img" src="../../img/rogk/806A5725.jpg" alt="Galleri bilde 9">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(10)">
+                        <img class="gallery-img" src="../../img/rogk/806A5745.jpg" alt="Galleri bilde 10">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(11)">
+                        <img class="gallery-img" src="../../img/rogk/806A5776.jpg" alt="Galleri bilde 11">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(12)">
+                        <img class="gallery-img" src="../../img/rogk/806A5834.jpg" alt="Galleri bilde 12">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(13)">
+                        <img class="gallery-img" src="../../img/rogk/806A5938.jpg" alt="Galleri bilde 13">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(14)">
+                        <img class="gallery-img" src="../../img/rogk/806A6023.jpg" alt="Galleri bilde 14">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(15)">
+                        <img class="gallery-img" src="../../img/rogk/806A6032.jpg" alt="Galleri bilde 15">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(16)">
+                        <img class="gallery-img" src="../../img/rogk/806A6060.jpg" alt="Galleri bilde 16">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(17)">
+                        <img class="gallery-img" src="../../img/rogk/806A6113.jpg" alt="Galleri bilde 17">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(18)">
+                        <img class="gallery-img" src="../../img/rogk/806A6321.jpg" alt="Galleri bilde 18">
+                    </div>
+                    <div class="gallery-item" onclick="openModal();currentSlide(19)">
+                        <img class="gallery-img" src="../../img/rogk/806A6481.jpg" alt="Galleri bilde 19">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Lightbox Modal (Det som dukker opp når du klikker) -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 19</div>
+                    <img src="../../img/rogk/806A5103.jpg" class="modal-main-img" alt="Bilde 1">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 19</div>
+                    <img src="../../img/rogk/806A5168.jpg" class="modal-main-img" alt="Bilde 2">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 19</div>
+                    <img src="../../img/rogk/806A5266.jpg" class="modal-main-img" alt="Bilde 3">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 19</div>
+                    <img src="../../img/rogk/806A5298.jpg" class="modal-main-img" alt="Bilde 4">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 19</div>
+                    <img src="../../img/rogk/806A5390.jpg" class="modal-main-img" alt="Bilde 5">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 19</div>
+                    <img src="../../img/rogk/806A5417.jpg" class="modal-main-img" alt="Bilde 6">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 19</div>
+                    <img src="../../img/rogk/806A5441.jpg" class="modal-main-img" alt="Bilde 7">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 19</div>
+                    <img src="../../img/rogk/806A5712.jpg" class="modal-main-img" alt="Bilde 8">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 19</div>
+                    <img src="../../img/rogk/806A5725.jpg" class="modal-main-img" alt="Bilde 9">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">10 / 19</div>
+                    <img src="../../img/rogk/806A5745.jpg" class="modal-main-img" alt="Bilde 10">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">11 / 19</div>
+                    <img src="../../img/rogk/806A5776.jpg" class="modal-main-img" alt="Bilde 11">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">12 / 19</div>
+                    <img src="../../img/rogk/806A5834.jpg" class="modal-main-img" alt="Bilde 12">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">13 / 19</div>
+                    <img src="../../img/rogk/806A5938.jpg" class="modal-main-img" alt="Bilde 13">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">14 / 19</div>
+                    <img src="../../img/rogk/806A6023.jpg" class="modal-main-img" alt="Bilde 14">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">15 / 19</div>
+                    <img src="../../img/rogk/806A6032.jpg" class="modal-main-img" alt="Bilde 15">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">16 / 19</div>
+                    <img src="../../img/rogk/806A6060.jpg" class="modal-main-img" alt="Bilde 16">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">17 / 19</div>
+                    <img src="../../img/rogk/806A6113.jpg" class="modal-main-img" alt="Bilde 17">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">18 / 19</div>
+                    <img src="../../img/rogk/806A6321.jpg" class="modal-main-img" alt="Bilde 18">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">19 / 19</div>
+                    <img src="../../img/rogk/806A6481.jpg" class="modal-main-img" alt="Bilde 19">
+                </div>
+
+                <!-- Navigasjons piler -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+        <footer>
+            <section class="footer-content">
+                <section class="copyright">
+                    <img class="footer-title" src="..\..\img\else og olav brun new.png" alt="Kristian & Rikke">
+                    <p>© 2025 &#8734; Rikke & Kristian.<br>Alle rettigheter forbeholdt</p>
+                </section>
+                <section class="contact">
+                    <h5>Kontakt:</h5>
+                    <p>Email: <a href="mailto:knesse1998@gmail.com">knesse1998@gmail.com</a></p>
+                    <p>Tlf: <a href="tel:+4748077003">+47 480 77 003</a></p>
+                </section>
+            </section>
+            <p>Nettside laget av Andy &#128521;</p>
+        </footer>
+
+        <!-- JavaScript for Galleri Logikk -->
+        <script>
+            // Åpne modal
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
+                document.body.style.overflow = "hidden"; // Hindrer scrolling av bakgrunn
+            }
+
+            // Lukke modal
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+                document.body.style.overflow = "auto"; // Tillater scrolling igjen
+            }
+
+            var slideIndex = 1;
+            
+            // Neste/Forrige knapper
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Vis spesifikt bilde når man klikker på thumbnail
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                
+                slides[slideIndex-1].style.display = "flex"; // Bruker flex for å sentrere
+            }
+
+            // Lukk modal hvis man klikker utenfor bildet
+            window.onclick = function(event) {
+                var modal = document.getElementById("myModal");
+                if (event.target == modal) {
+                    closeModal();
+                }
+            }
+            
+            // Tastatur-støtte (Piler og Escape)
+            document.addEventListener('keydown', function(event) {
+                if(document.getElementById("myModal").style.display === "block"){
+                    if (event.key === "Escape") {
+                        closeModal();
+                    } else if (event.key === "ArrowRight") {
+                        plusSlides(1);
+                    } else if (event.key === "ArrowLeft") {
+                        plusSlides(-1);
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
