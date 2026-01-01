@@ -55,14 +55,14 @@ header{
 .changeColorNav > .dtnav > a{
     color: black;
 }
-.changeColorNav > .dtnav > .dtnav_link{
+.changeColorNav > .dtnav > .ddnav_openbtn{
     filter: none;
 }
 #ddnav_openbtn{
     visibility: hidden;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0px;
+    right: 15px;
     font-size: 50px;
     font-family: inherit;
     outline: none;
@@ -166,6 +166,7 @@ header{
     margin-right: 10%;
 }
 .dtnav_link{
+    
     text-decoration: none;
     color: var(--textcolorinverse);
     font-family: inherit;
