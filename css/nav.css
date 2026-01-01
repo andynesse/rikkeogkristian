@@ -24,31 +24,28 @@ header{
     color: #ffffff;
 }
 .header-a{
-
     margin: 20px 0 0 40px;
     height: 100%;
     width: 25%;
 }
 .header-img-white{
     height: 70%;
-    visibility: visible;
     filter: drop-shadow(0px 0px 5px rgba(123, 121, 121, 0.8));
 }
 .header-img-black{
-    height: 0;
-    visibility: hidden;
+    height: 70%;
+    display: none;
 }
 .changeColorNav > .header-a > .header-img-black{
-    height: 70%;
-    visibility: visible;
+    display: inline-block;
     
 }
 .changeColorNav > .header-a > .header-img-white{
-    visibility: hidden;
-    height: 0;
+    display: none;
 }
 .changeColorNav > #ddnav_openbtn{
     color: black;
+    filter: none;
 }
 
 .changeColorNav{
@@ -78,7 +75,7 @@ header{
     -ms-user-select: none;
     user-select: none;
     cursor: pointer;
-    
+    filter: drop-shadow(0px 0px 5px rgba(123, 121, 121, 0.8));
 }
 .dtnav{
     visibility: visible;
