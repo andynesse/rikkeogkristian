@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1024px) {
     .title{
-        background-image: url("img/rogk/806A6481.jpg") !important;
+        background-image: url("img/806A6481.jpg") !important;
     }
 }
 *, *::before, *::after {
@@ -36,7 +36,7 @@ body{
 }
 .title{
     height: 100vh;
-    background-image: url("img/rogk/806A6060.jpg");
+    background-image: url("img/806A6060.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 0;

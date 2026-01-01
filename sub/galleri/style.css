@@ -27,12 +27,11 @@ body{
     white-space: normal;
 }
 
-/* --- Header og Tittel Seksjon --- */
 .title{
     margin-top: 0;
-    padding-bottom: 0; /* Endret fra 10vh for å minske gap */
+    padding-bottom: 0;
     height: 45vh;
-    background-image: url("../../img/rogk/806A5745.jpg");
+    background-image: url("../../img/806A5745.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -69,7 +68,6 @@ body{
     font-family: 'EB Garamond', serif;
 }
 
-/* --- Credits Seksjon --- */
 .credits{
     padding: 20px 5% 0 5%;
     border-top: 1px solid #ddd;
@@ -92,17 +90,13 @@ body{
     text-wrap: wrap;
 }
 
-/* --- GALLERI STYLING (Nytt) --- */
-
 .content {
-    padding: 35px 5%; /* Gir luft på sidene */
+    padding: 35px 5%;
     min-height: 50vh;
 }
 
-/* Grid Layout for thumbnails */
 .gallery-grid {
     display: grid;
-    /* Denne linjen gjør det responsivt automatisk: */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     gap: 20px;
     width: 100%;
@@ -111,7 +105,7 @@ body{
 .gallery-item {
     position: relative;
     width: 100%;
-    height: 300px; /* Fast høyde for uniformitet */
+    height: 300px;
     overflow: hidden;
     cursor: pointer;
     border-radius: 4px;
@@ -127,15 +121,13 @@ body{
 .gallery-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Sørger for at bildene dekker ruten uten å bli strukket */
+    object-fit: cover;
     transition: transform 0.5s ease;
 }
 
 .gallery-item:hover .gallery-img {
-    transform: scale(1.1); /* Zoom effekt inni ruten */
+    transform: scale(1.1);
 }
-
-/* --- LIGHTBOX / MODAL STYLING (Nytt) --- */
 
 .modal {
     display: none;
@@ -150,7 +142,6 @@ body{
     background-color: rgba(0, 0, 0, 0.95);
 }
 
-/* Modal Content Wrapper */
 .modal-content {
     position: relative;
     margin: auto;
@@ -162,7 +153,6 @@ body{
     align-items: center;
 }
 
-/* Selve bildet i modalen */
 .modal-main-img {
     max-width: 90vw;
     max-height: 90vh;
@@ -171,7 +161,6 @@ body{
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
 }
 
-/* Lukk-knapp */
 .close {
     color: white;
     position: absolute;
@@ -192,7 +181,6 @@ body{
     cursor: pointer;
 }
 
-/* Slides */
 .mySlides {
     display: none;
     width: 100%;
@@ -201,7 +189,6 @@ body{
     align-items: center;
 }
 
-/* Neste/Forrige knapper */
 .prev,
 .next {
     cursor: pointer;
@@ -235,7 +222,6 @@ body{
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Bilde teller (1/4 etc) */
 .numbertext {
     color: #f2f2f2;
     font-size: 14px;
@@ -246,8 +232,6 @@ body{
     font-family: sans-serif;
 }
 
-
-/* --- Footer Styles --- */
 footer{
     height: 180px;
     color: var(--primary-brown);
@@ -287,10 +271,9 @@ footer > p{
     font-size: 14px;
 }
 
-/* --- Media Queries (Mobil) --- */
 @media only screen and (max-width: 1024px) {
-    .title{
-        background-image: url("../../img/rogk/806A5745.jpg") !important;
+        .title{
+        background-image: url("../../img/806A5745.jpg") !important;
         height: 35vh;
     }
     .title-header {
@@ -301,7 +284,6 @@ footer > p{
         font-size: 40px;
     }
     
-    /* Justerer grid på mobil til å vise færre kolonner */
     .gallery-grid {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 10px;
@@ -316,7 +298,6 @@ footer > p{
 
 @media only screen and (max-width: 700px) {
     
-    /* Justerer grid på mobil til å vise færre kolonner */
     .gallery-grid {
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
         gap: 10px;

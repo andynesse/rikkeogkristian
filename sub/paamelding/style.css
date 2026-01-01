@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1024px) {
     .title{
-        background-image: url("../../img/rogk/806A5390.jpg") !important;
+        background-image: url("../../img/806A5390.jpg") !important;
     }
     .title-h1{
         text-align: right !important;
@@ -43,7 +43,7 @@ body{
     margin-top: 0;
     padding-bottom: 0; /* Endret fra 10vh for å minske gap */
     height: 45vh;
-    background-image: url("../../img/rogk/806A5745.jpg");
+    background-image: url("../../img/806A5745.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
