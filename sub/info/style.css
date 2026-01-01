@@ -85,17 +85,86 @@ body{
     width: 100vw;
     overflow-x: hidden;
 }
-.info > article{
-    margin: 50px;
+/* --- FAQ / Dropdown Styling --- */
+
+/* Container for the whole list */
+.faq-section {
+    width: 100vw;
+    max-width: 800px; /* Limits width for better readability on desktop */
+    margin: 50px auto; /* Centers the list */
+    padding: 0 20px;
 }
-.info > article > p{
-    word-wrap: break-word;
-    white-space: normal;
-    font-size: 20px;
-    line-height: 1.5;
+
+/* Individual FAQ Item */
+.faq-item {
+    border-bottom: 1px solid rgba(112, 83, 77, 0.3); /* Subtle brown line */
+    margin-bottom: 0;
 }
-.info > article > p > a{
-    color: rgb(112, 83, 77);
+
+/* Hide the actual checkbox input */
+.faq-item input[type="checkbox"] {
+    display: none;
+}
+
+/* The Clickable Header (Label) */
+.faq-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.faq-label:hover {
+    background-color: rgba(112, 83, 77, 0.05); /* Slight hover effect */
+}
+
+/* Typography for the label header */
+.faq-label h2 {
+    margin: 0;
+    font-size: 28px;
+    font-family: 'EB Garamond', serif;
+    color: var(--primary-brown);
+}
+
+/* The + Icon */
+.faq-icon {
+    font-size: 24px;
+    color: var(--primary-brown);
+    transition: transform 0.3s ease;
+}
+
+/* The Content Container (Hidden by default) */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out; /* Smooth sliding animation */
+}
+
+/* Padding for the text inside (wrapper needed for smooth animation) */
+.faq-inner {
+    padding: 0 10px 30px 10px;
+}
+
+.faq-inner p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: var(--textcolormain);
+}
+
+/* --- THE MAGIC (Interactivity) --- */
+
+/* When checkbox is checked, rotate the icon 45deg (making it an X) */
+.faq-item input:checked + .faq-label .faq-icon {
+    transform: rotate(45deg); 
+}
+
+/* When checkbox is checked, reveal the content */
+.faq-item input:checked ~ .faq-content {
+    max-height: 1000px; /* Large enough number to fit all content */
 }
 h2{
     font-size: 32px;
