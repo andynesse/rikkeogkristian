@@ -30,10 +30,10 @@ body{
 .title{
     margin-top: 0;
     padding-bottom: 0;
-    height: 45vh;
+    height: 80vh;
     background-image: url("../../img/806A5745.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 50% 10%;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -270,11 +270,11 @@ footer > p{
     text-align: center;
     font-size: 14px;
 }
-
-@media only screen and (max-width: 1024px) {
-        .title{
+@media only screen and (max-width: 800px) {
+    .title{
         background-image: url("../../img/806A5745.jpg") !important;
-        height: 35vh;
+        background-position: top;
+        height: 45vh;
     }
     .title-header {
         top: 25%;
@@ -283,7 +283,8 @@ footer > p{
         text-align: center !important;
         font-size: 40px;
     }
-    
+}
+@media only screen and (max-width: 1024px) {    
     .gallery-grid {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 10px;
@@ -294,7 +295,6 @@ footer > p{
         padding: 10px;
     }
 }
-
 
 @media only screen and (max-width: 700px) {
     

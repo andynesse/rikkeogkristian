@@ -1,8 +1,19 @@
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 800px) {
     .title{
         background-image: url("img/806A6481.jpg") !important;
+        background-position: 50% 20% !important;
     }
 }
+
+@media only screen and (max-width: 650px) {
+    .title-header {
+        top:auto !important;
+        left: auto !important;
+        bottom: 10% !important;
+        right: 10% !important;
+    }
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -64,7 +75,7 @@ body{
 
 .title-header {
     position: absolute;
-    top: 30%;
+    top: 28%;
     left: 10%;
     right: 10%;
     width: 80%;
