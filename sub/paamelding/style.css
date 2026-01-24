@@ -43,9 +43,9 @@ body{
     margin-top: 0;
     padding-bottom: 0; /* Endret fra 10vh for å minske gap */
     height: 45vh;
-    background-image: url("../../img/806A5745.jpg");
+    background-image: url("../../img/806A5298.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 0 45%;
     background-repeat: no-repeat;
     position: relative;
 }

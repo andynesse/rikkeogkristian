@@ -1,6 +1,7 @@
 @media only screen and (max-width: 800px) {
     .title{
         background-image: url("../../img/806A6032.jpg") !important;
+        background-position: center !important;
     }
     .title-h1{
         text-align: right !important;
@@ -44,9 +45,9 @@ body{
     margin-top: 0;
     padding-bottom: 0; /* Endret fra 10vh for å minske gap */
     height: 45vh;
-    background-image: url("../../img/806A5745.jpg");
+    background-image: url("../../img/806A5922.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 0% 40%;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -70,7 +71,7 @@ body{
     text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 }
 .title-h1{
-    text-align: left;
+    text-align: right;
     font-size: 60px;
     margin-bottom: 0;
     font-weight: 100;
